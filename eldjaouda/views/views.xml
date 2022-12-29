@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="eldjaouda.list">
+      <field name="name">eldjaouda list</field>
+      <field name="model">eldjaouda.eldjaouda</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="eldjaouda.action_window">
+      <field name="name">eldjaouda window</field>
+      <field name="res_model">eldjaouda.eldjaouda</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="eldjaouda.action_server">
+      <field name="name">eldjaouda server</field>
+      <field name="model_id" ref="model_eldjaouda_eldjaouda"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="eldjaouda" id="eldjaouda.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="eldjaouda.menu_1" parent="eldjaouda.menu_root"/>
+    <menuitem name="Menu 2" id="eldjaouda.menu_2" parent="eldjaouda.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="eldjaouda.menu_1_list" parent="eldjaouda.menu_1"
+              action="eldjaouda.action_window"/>
+    <menuitem name="Server to list" id="eldjaouda" parent="eldjaouda.menu_2"
+              action="eldjaouda.action_server"/>
+-->
+  </data>
+</odoo>
